@@ -5,16 +5,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    /*width: 100%;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;*/
     
     @include tools.container-width;
 
     background-color: var(--color-black-pearl-50);
 }
 
-header {
+// TODO Move to objects
+.main-navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -28,4 +29,9 @@ main {
     flex-direction: column;
 
     @include tools.container-width;
+}
+
+// TODO Move to reset file
+a {
+ text-decoration: none;
 }
