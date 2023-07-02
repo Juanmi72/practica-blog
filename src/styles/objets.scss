@@ -22,6 +22,8 @@
 }
 
 .post-list {
+    // para container-querys debemos especificar esta linea en el contenedor padre
+    /*container-type: inline-size;*/
     display: grid;
     gap: 32px 0;
     

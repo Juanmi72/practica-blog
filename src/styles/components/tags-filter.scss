@@ -5,7 +5,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
-    gap: 16px 0;
+    gap: 24px 0;
 
     @include tools.desktop {
         flex-wrap: nowrap;
@@ -16,8 +16,22 @@
     gap:32px;
 }
 
+.filter-list {
+    overflow-y: hidden;
+    
+    height: 50px;
+}
+.filter {
+    white-space: nowrap;
+}
+
 .is-active-filter .filter {
     background-color: var(--color-black-pearl-900);
     color: var(--color-aquarius-50);
     padding: 8px 12px;
+}
+
+.filter-list-scroll-hider {
+    overflow-y: hidden;
+    height: 40px;
 }

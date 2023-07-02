@@ -9,6 +9,7 @@ body {
     margin: 0 auto;
     background-color: var(--color-black-pearl-50);
     padding: var(--container-padding);
+
     @include tools.container-width;
 
 }
@@ -20,5 +21,11 @@ main {
     flex-direction: column;
 
     @include tools.container-width;
+}
+
+// TODO: Move to reset file
+
+a {
+    text-decoration: none;
 }
 

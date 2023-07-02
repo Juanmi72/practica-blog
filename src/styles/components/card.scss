@@ -63,8 +63,16 @@
 }
 
 
-// TODO Paragraph/XS/Regular
+
 .reading-time {
     
     color: var(--color-black-pearl-400);
 }
+
+// Se utiliza para container-queries
+/*@container (min-width: 1000px) {
+    .card {
+        background:tomato;
+    }
+}
+*/

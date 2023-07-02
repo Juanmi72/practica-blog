@@ -1,4 +1,5 @@
 @use "settings";
+
 @mixin container-width {
     width: 100%;
     max-width: var(--container-max-width);
