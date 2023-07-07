@@ -1,5 +1,11 @@
 @use "tools";
 
+.main-container {
+    padding: var(--container-padding);
+
+    @include tools.container-width;
+}
+
 .nav-list {
     display: flex;
     align-items: baseline;
@@ -42,4 +48,47 @@
     padding: 20px 0;
 
     @include tools.container-width;
+
+    @include tools.desktop {
+        flex-direction: row;
+    }
+}
+
+// TODO : mAQUETAR la Card y los botones de atras y adelante y darles funcionalidad.
+
+.featured-posts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 24px 0;
+    margin-bottom: 90px;
+}
+
+.featured-posts article {
+    width: 100%;
+    height: 630px;
+    background: var(--color-aquarius-900);
+    
+}
+
+.featured-posts .button-container {
+    display: flex;
+    gap: 32px;
+}
+.featured-posts button {
+    width: 54px;
+    height: 42px;
+    font-size: 0;
+    border: none;
+    background: var(--color-aquarius-600);
+}
+
+//  TODO : Esto es lo que se llama un PlaceHolder, ocupamos el espacio pero sin incluir nada dentro que lo tendremos que hacer mas adelante.
+body > footer {
+    height: 290px;
+    width: 100%;
+    padding: var(--container-padding);
+    background-color: var(--color-black-pearl-900);
+    margin-top: 90px;
+
 }

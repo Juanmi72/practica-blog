@@ -8,9 +8,9 @@ body {
     width: 100%;
     margin: 0 auto;
     background-color: var(--color-black-pearl-50);
-    padding: var(--container-padding);
+    
 
-    @include tools.container-width;
+    
 
 }
 
@@ -19,8 +19,6 @@ body {
 main {
     display: flex;
     flex-direction: column;
-
-    @include tools.container-width;
 }
 
 // TODO: Move to reset file
