@@ -53,7 +53,7 @@
 
 
 
-.reading-time {
+.help-text {
     
     color: var(--color-black-pearl-400);
 }
@@ -69,7 +69,8 @@
 // FIXME: card-extended, review how can we implement 
 // this with container queries or be explicit aboaut it.
 @include tools.desktop {
-    .card-extended  {
+    // .card-extended "esta clase se utilizaría si estuviese orientado a componentes como react"
+    .card:nth-child(4n)  {
         
         background-color: var(--color-aquarius-100);
         flex-direction: row;
@@ -80,13 +81,15 @@
         & > img {
            
             width: 660px;
+            height: auto;
         }
 
         & > section {
             gap: 12px 0;
         }
     }    
-    .card-extended:nth-child(8){
+    // .card-extended.is-reversed "estas clases se utilizarían si estuviese orientado a componentes como react"
+    .card:nth-child(8n){
         flex-direction: row-reverse;
     }
 }
